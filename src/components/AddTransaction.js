@@ -12,7 +12,7 @@ export const AddTransaction = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    // Reset previous errors
+    // Reset previous 
     setTextError('');
     setAmountError('');
 
@@ -30,7 +30,6 @@ export const AddTransaction = () => {
       setAmountError('Amount must be a valid integer');
     }
 
-    // If there are any errors, return without adding the transaction
     if (textError || amountError) {
       return;
     }
@@ -42,7 +41,6 @@ export const AddTransaction = () => {
 
     addTransaction(newTransaction);
 
-    // Clear the form after successful submission
     setText('');
     setAmount('');
   };

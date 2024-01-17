@@ -1,4 +1,3 @@
-// Give your reducer function a name
 const appReducer = (state, action) => {
   switch(action.type) {
     case 'GET_TRANSACTIONS':
@@ -27,5 +26,4 @@ const appReducer = (state, action) => {
   }
 }
 
-// Export the named function as the default export
 export default appReducer;
