@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/GlobalState';
 import { numberWithCommas } from '../utils/format';
 
 const formatNumberToK = (number) => {
-  if (Math.abs(number) >= 10000) {
+  if (Math.abs(number) >= 1000) {
     return `${(number / 1000).toFixed(0)}k`;
   } else {
     return number.toFixed(2);
